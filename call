@@ -2,7 +2,7 @@ prompt=$1
 
 amount=${2:-"400"}
 
-read -r CHAT_GPT_API_KEY < ~/openai/api_key/api_key
+read -r CHAT_GPT_API_KEY < ~/answer_script/api_key/api_key
 curl -s https://api.openai.com/v1/completions \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer $CHAT_GPT_API_KEY" \
