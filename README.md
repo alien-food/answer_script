@@ -13,8 +13,16 @@ make calls to chatgpt api from command line with call, or feed in a text file to
 4) Create a new file called "api_key" that contains your secret api_key for chatgpt
 ```nano api_key```
 
-5) Then mv call and chatfile to your /usr/local/bin directory so they are on your $PATH
+5) Give permissions to call and chatfile to execute
+```chmod +x call && chmod +x chatfile```
+
+6) Then mv call and chatfile to your /usr/local/bin directory so they are on your $PATH
 ```sudo mv call chatfile /usr/local/bin```
+
+7) Make sure jq is installed on your system (JSON processor)
+*macOS ```brew install jq```
+
+*Linux Debian/Ubuntu ```sudo apt-get update && sudo apt-get install jq```
 
 To ask chatgpt a question from your command line use call, ex...
 ```call "write me a 100 word essay about America```
