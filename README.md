@@ -1,11 +1,11 @@
 # answer_script
 make calls to chatgpt api from command line with call, or feed in a text file to chatgpt with chatfile.
 
-1) Start in a new directory called "openai"
-```mkdir openai && cd openai```
+1) Starting from your home directory
+```cd ~/```
 
 2) Download or copy call, chatfile, and chatfile.py to this directory
-```git clone --no-checkout https://github.com/alien-food/answer_script .&& git checkout HEAD -- .```
+```git clone https://github.com/alien-food/answer_script```
 
 3) create a directory within "openai" directory called "api_key" 
 ```mkdir api_key```
