@@ -1,0 +1,9 @@
+prompt=$1
+
+amount=${2:-"400"}
+
+read -r CHAT_GPT_API_KEY < ~/openai/api_key/api_key
+curl -s https://api.openai.com/v1/completions \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer $CHAT_GPT_API_KEY" \
+-d '{"model": "text-davinci-003", "prompt": "'"$prompt"'", "temperature": 0, "max_tokens": '"$amount"'}' | jq '.choices[].text'
