@@ -20,6 +20,7 @@ make calls to chatgpt api from command line with call, or feed in a text file to
 ```sudo mv call chatfile /usr/local/bin```
 
 7) Make sure jq is installed on your system (JSON processor)
+
 *macOS ```brew install jq```
 
 *Linux Debian/Ubuntu ```sudo apt-get update && sudo apt-get install jq```
