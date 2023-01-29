@@ -7,8 +7,8 @@ make calls to chatgpt api from command line with call, or feed in a text file to
 2) Download or copy call, chatfile, and chatfile.py to this directory
 ```git clone https://github.com/alien-food/answer_script```
 
-3) create a directory within "openai" directory called "api_key" 
-```mkdir api_key```
+3) create a directory within "answer_script" directory called "api_key" 
+```cd answer_script && mkdir api_key && cd api_key```
 
 4) Create a new file called "api_key" that contains your secret api_key for chatgpt
 ```nano api_key```
