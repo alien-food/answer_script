@@ -26,7 +26,7 @@ make calls to chatgpt api from command line with call, or feed in a text file to
 *Linux Debian/Ubuntu ```sudo apt-get update && sudo apt-get install jq```
 
 To ask chatgpt a question from your command line use call, ex...
-```call "write me a 100 word essay about America```
+```call "write me a 100 word essay about America"```
 
 To feed a text file into chatgpt such as a study guide outline, or a list of terms, and get a result in a new file that you name, use chatfile. You also specify the words you want to put at the beginning and the words at the end of each prompt. Format of executing the command would look like "chatfile in_file out_file "pre-prompt" "post-prompt"
 ex...
