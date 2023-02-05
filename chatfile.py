@@ -8,6 +8,8 @@ import time
 work = []
 inputfile = sys.argv[1]
 outputfile = str(sys.argv[2])
+pretext = str(sys.argv[3])
+posttext = str(sys.argv[4])
 
 with open(str(inputfile), 'r') as fi:
 	for line in fi:
@@ -40,7 +42,7 @@ new = []
 for line in work:
 	translator = line.maketrans('', '', string.punctuation)
 	line = line.translate(translator)
-	line = "How do i " + line + " for ccna"
+	line = pretext + " " + line + " " + posttext
 	new.append(line)
 
 ultimate = []
